@@ -6,8 +6,20 @@ print ("*********************************")
 
 #numero_secreto = round(random.random() * 100)
 numero_secreto = random.randrange(1, 101)
-total_tentativas = 3
+total_tentativas = 0
 #rodada = 1
+
+print("Escolha o nível de dificuldade: ")
+print("(1) - Fácil  (2) - Médio  (3) - Difícil")
+
+nivel = int(input("Definido o nível: "))
+
+if(nivel == 1):
+    total_tentativas = 8
+elif(nivel == 2):
+    total_tentativas = 5
+else:
+    total_tentativas = 3
 
 #while(rodada <= total_tentativas):
 for rodada in range(1, total_tentativas + 1):
